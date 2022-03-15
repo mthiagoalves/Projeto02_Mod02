@@ -1,1 +1,1 @@
-# Projeto02_Mod02
+# Projeto02_Mod02_Pokedex
