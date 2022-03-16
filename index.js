@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "public")));
+
 
 const pokedex = [
   {
@@ -8,15 +11,15 @@ const pokedex = [
     nome: "Bulbasaur",
     descricao:
       "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
-    tipo: "Grass",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+    tipo: "Tipo: Grass",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
   },
   {
     id: 004,
     nome: "Charmander ",
     descricao:
       "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
-    tipo: "Fire",
+    tipo: "Tipo: Fire",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
   },
   {
@@ -24,7 +27,7 @@ const pokedex = [
     nome: "Squirtle  ",
     descricao:
       "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-    tipo: "Water",
+    tipo: "Tipo: Water",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
   },
 ];

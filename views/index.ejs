@@ -4,31 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Projeto 02</title>
   </head>
 
   <body>
+
+    <header>
+
     <h1>Pokedex</h1>
 
-    <section>
+    </header>
+
+    <main>
+
+        <section id="card">
         
-        <% pokedex.forEach((pokemon) =>{ %>
+            <% pokedex.forEach((pokemon) =>{ %>
+    
+                <div class="card">
+    
+                <img src="<%= pokemon.imagem %>" alt="" />
+    
+                <h2><%= pokemon.nome %></h2>
+    
+                <p class="descricao"><%= pokemon.descricao %></p>
+    
+                <p class="tipo"><%= pokemon.tipo %></p>
+    
+                </div>
+    
+            <% }) %>
+    
+        </section>
 
-            <div>
+    </main>
 
-            <img src="<%= pokemon.imagem %>" alt="" />
-
-            <h2><%= pokemon.nome %></h2>
-
-            <p><%= pokemon.descricao %></p>
-
-            <p><%= pokemon.tipo %></p>
-
-            </div>
-
-        <% }) %>
-
-    </section>
 
   </body>
 
