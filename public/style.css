@@ -21,31 +21,116 @@ main{
     margin: 0 10rem 0 10rem;
 }
 
-section#card{
+section#cards{
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
 }
 
-section#card div.card{
+section#cards div.card{
     width: 20rem;
     box-shadow: 10px 5px 5px #00000015;
     padding: 3rem;
-    
+    margin: 2.5rem 0 2.5rem 0;
 }
 
-section#card div.card img{
+section#cards h2{
+    width: 100%;
+    text-align: center;
+}
+
+section#cards div.card img{
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+section#cards div.card h3{
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+section#cards div.card p.descricao{
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+section#cards div.card p.descricao{
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+section#cards div.card a{
+    padding: .6rem;
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: #fff;
+    border: solid 1px rebeccapurple;
+    color: rebeccapurple;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+    margin-top: 1.5rem
+}
+
+section#cards div.card a:hover{
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+section#cadastro{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+section#cadastro img{
+    width: 25%;
+}
+
+section#cadastro h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3rem;
+    color:rgb(109, 108, 108)
+}
+
+section#cadastro form{
     width: 100%;
 }
 
-section#card div.card h2{
-    margin-bottom: 1rem;
+section#cadastro form input{
+    width: 100%;
+    padding: .7rem;
+    font-size: 1rem;
+    outline: none;
+    border: solid 2px #ccc;
+    margin: 0rem 1rem 1rem 1rem;
 }
 
-section#card div.card p.descricao{
-    margin-bottom: 1rem;
+section#cadastro form label{
+    margin: 1rem;
+color: rgb(109, 108, 108);
+
 }
 
-section#card div.card p.descricao{
-    margin-bottom: 1rem;
+section#cadastro form button{
+    padding: .6rem;
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: #fff;
+    border: solid 1px rebeccapurple;
+    color: rebeccapurple;
+    transition: .4s ease-in-out;
+}
+
+section#cadastro form button:hover{
+    background-color: rebeccapurple;
+    color: #fff;
 }
