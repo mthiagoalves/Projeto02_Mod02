@@ -6,6 +6,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded());
 
+
 let pokemon = undefined;
 const pokedex = [
   {
@@ -51,6 +52,7 @@ app.post("/add", (req, res) => {
   const pokemon = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
+  console.log(pokedex)
   res.redirect("/");
 
 });
@@ -58,7 +60,7 @@ app.post("/add", (req, res) => {
 app.get("/detalhes/:id", (req, res) => {
   const id = +req.params.id;
     pokemon = pokedex.find(item => item.id === id);
-
+    console.log(pokedex)
     res.redirect("/");
 });
 
@@ -70,7 +72,7 @@ app.post("/update/:id", (req,res) => {
   newPokemon.id = id + 1;
 
   pokedex[id] = newPokemon;
-
+  console.log(pokedex)
   pokemon = undefined;
 
   res.redirect("/");
