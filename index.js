@@ -1,6 +1,7 @@
 const express = require("express");
 const { send } = require("express/lib/response");
 const app = express();
+const port = process.env.PORT || 3000;
 const path = require("path");
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
