@@ -80,7 +80,7 @@ app.post("/update/:id", (req,res) => {
 
 });
 
-app.listen(5045, () =>
-  console.log(`Servidor rodando em http://localhost:5045`)
+app.listen(port, () =>
+  console.log(`Servidor rodando em http://localhost:3000`)
 );
 
